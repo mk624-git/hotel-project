@@ -1,0 +1,462 @@
+/* ============================================
+   CITY STAY - Main Stylesheet
+   ============================================ */
+
+:root {
+    --teal: #2ec1ac;
+    --teal-dark: #1a9b8a;
+    --teal-light: #e8f8f5;
+    --dark: #2d3436;
+    --gray: #636e72;
+    --light-gray: #f8f9fa;
+    --border-color: #dfe6e9;
+    --shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --radius: 12px;
+    --radius-lg: 20px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f6fa;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+.h-font {
+    font-family: 'Merienda', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.custom-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+    color: white;
+    transition: var(--transition);
+}
+
+.custom-bg:hover {
+    background-color: var(--teal-dark);
+    border-color: var(--teal-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(46, 193, 172, 0.3);
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--teal);
+    color: var(--teal);
+    background: transparent;
+    transition: var(--transition);
+}
+
+.btn-outline-custom:hover {
+    background: var(--teal);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ============================================
+   H-LINE (Decorative Line)
+   ============================================ */
+.h-line {
+    width: 80px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: var(--teal);
+}
+
+.h-line.dark {
+    background: var(--dark);
+}
+
+.h-line.white {
+    background: white;
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+.badge-custom {
+    background: var(--light-gray);
+    color: var(--dark);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.badge-custom i {
+    margin-right: 4px;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+.form-control, .form-select {
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px rgba(46, 193, 172, 0.1);
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--teal);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark);
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--teal);
+    background: var(--teal-light);
+}
+
+.nav-link.active {
+    color: var(--teal);
+    background: var(--teal-light);
+}
+
+/* ============================================
+   MODALS
+   ============================================ */
+.modal-content {
+    border: none;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hover);
+}
+
+.modal-header {
+    border-bottom: 2px solid var(--border-color);
+    padding: 20px 25px;
+}
+
+.modal-footer {
+    border-top: 2px solid var(--border-color);
+    padding: 20px 25px;
+}
+
+/* ============================================
+   CAROUSEL / SWIPER
+   ============================================ */
+.swiper {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: rgba(0, 0, 0, 0.4);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    transition: var(--transition);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--teal);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--teal);
+    opacity: 1;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.section-title p {
+    color: var(--gray);
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+/* ============================================
+   AVAILABILITY FORM
+   ============================================ */
+.availability-form {
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+.availability-form .bg-white {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+    padding: 30px;
+}
+
+@media (max-width: 575px) {
+    .availability-form {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+}
+
+/* ============================================
+   CONTACT CARDS
+   ============================================ */
+.contact-card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 30px 20px;
+    text-align: center;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.contact-icon i {
+    font-size: 26px;
+    color: white;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 50px 0 0;
+    margin-top: 60px;
+}
+
+.footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.footer a:hover {
+    color: var(--teal);
+    transform: translateX(5px);
+}
+
+.footer .social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: var(--transition);
+}
+
+.footer .social-link:hover {
+    background: var(--teal);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 992px) {
+    .swiper {
+        height: 350px;
+    }
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 280px;
+    }
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    .contact-card {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper {
+        height: 200px;
+    }
+    .card-img-top {
+        height: 160px;
+    }
+    .availability-form .bg-white {
+        padding: 20px;
+    }
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+.text-teal {
+    color: var(--teal);
+}
+
+.bg-teal {
+    background-color: var(--teal);
+}
+
+.bg-teal-light {
+    background-color: var(--teal-light);
+}
+
+.shadow-hover {
+    transition: var(--transition);
+}
+
+.shadow-hover:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.rounded-custom {
+    border-radius: var(--radius);
+}
+
+.rounded-custom-lg {
+    border-radius: var(--radius-lg);
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--teal);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--teal-dark);
+}
